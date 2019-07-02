@@ -1,3 +1,4 @@
+package Models;
 
 public class employee {
     private int employee_id;
@@ -17,54 +18,29 @@ public class employee {
         this.department_id=department_id;
     }
 
-    //getters and setters
+    //getters
     public int getEmployee_id() {
         return employee_id;
-    }
-
-    public void setEmployee_id(int employee_id) {
-        this.employee_id = employee_id;
     }
 
     public String getEmployee_firstname() {
         return employee_firstname;
     }
 
-    public void setEmployee_firstname(String employee_firstname) {
-        this.employee_firstname = employee_firstname;
-    }
-
     public String getEmployee_lastname() {
         return employee_lastname;
-    }
-
-    public void setEmployee_lastname(String employee_lastname) {
-        this.employee_lastname = employee_lastname;
     }
 
     public String getBirth_date() {
         return birth_date;
     }
 
-    public void setBirth_date(String birth_date) {
-        this.birth_date = birth_date;
-    }
-
     public String getHire_date() {
         return hire_date;
-    }
-
-    public void setHire_date(String hire_date) {
-        this.hire_date = hire_date;
     }
 
     public int getDepartment_id() {
         return department_id;
     }
-
-    public void setDepartment_id(int department_id) {
-        this.department_id = department_id;
-    }
-
 
 }
