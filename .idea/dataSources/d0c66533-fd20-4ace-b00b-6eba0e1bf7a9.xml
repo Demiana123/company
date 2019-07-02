@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Microsoft SQL Server - company@localhost">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.15">
+    <root id="1">
+      <ServerVersion>13.0.5081</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="ReportServer">
+      <ObjectId>5</ObjectId>
+      <Collation>Latin1_General_100_CI_AS_KS_WS</Collation>
+    </database>
+    <database id="3" parent="1" name="ReportServerTempDB">
+      <ObjectId>6</ObjectId>
+    </database>
+    <database id="4" parent="1" name="company">
+      <ObjectId>8</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+      <Collation>Latin1_General_CI_AS</Collation>
+      <Fingerprint>8.43641/A1C80217-2E81-4379-8E9E-711FF94E7A6F@LAPTOP-O0U90NHE</Fingerprint>
+    </database>
+    <database id="5" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Collation>Latin1_General_CI_AS</Collation>
+    </database>
+    <database id="6" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>Latin1_General_CI_AS</Collation>
+    </database>
+    <database id="7" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>Latin1_General_CI_AS</Collation>
+    </database>
+    <database id="8" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>Latin1_General_CI_AS</Collation>
+    </database>
+    <database id="9" parent="1" name="work">
+      <ObjectId>7</ObjectId>
+      <Collation>Latin1_General_CI_AS</Collation>
+    </database>
+    <schema id="10" parent="4" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="11" parent="4" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="12" parent="4" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="13" parent="4" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="14" parent="4" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="15" parent="4" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="16" parent="4" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="17" parent="4" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="18" parent="4" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="19" parent="4" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="20" parent="4" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2019-07-01.18:12:35.233</IntrospectionTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="21" parent="4" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="22" parent="4" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table id="23" parent="20" name="departments">
+      <ObjectId>965578478</ObjectId>
+      <CreatedTimestamp>2019-06-26.17:21:37.113</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.19:23:39.030</ModifiedTimestamp>
+    </table>
+    <table id="24" parent="20" name="employees">
+      <ObjectId>869578136</ObjectId>
+      <CreatedTimestamp>2019-06-26.17:21:22.743</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.17:32:45.557</ModifiedTimestamp>
+    </table>
+    <table id="25" parent="20" name="employees_managers junction">
+      <ObjectId>901578250</ObjectId>
+      <CreatedTimestamp>2019-06-26.17:21:22.807</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.17:32:45.353</ModifiedTimestamp>
+    </table>
+    <table id="26" parent="20" name="managers">
+      <ObjectId>997578592</ObjectId>
+      <CreatedTimestamp>2019-06-26.17:32:45.163</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.19:23:39.047</ModifiedTimestamp>
+    </table>
+    <table id="27" parent="20" name="sysdiagrams">
+      <ObjectId>661577395</ObjectId>
+      <CreatedTimestamp>2019-06-26.16:56:28.873</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.16:56:28.873</ModifiedTimestamp>
+    </table>
+    <routine id="28" parent="20" name="fn_diagramobjects">
+      <ObjectId>805577908</ObjectId>
+      <SourceTextLength>1647</SourceTextLength>
+      <CreatedTimestamp>2019-06-26.16:56:28.913</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.16:56:28.913</ModifiedTimestamp>
+      <RoutineKind>function</RoutineKind>
+      <RoutineType>scalar-fun</RoutineType>
+    </routine>
+    <routine id="29" parent="20" name="sp_alterdiagram">
+      <ObjectId>773577794</ObjectId>
+      <SourceTextLength>1501</SourceTextLength>
+      <CreatedTimestamp>2019-06-26.16:56:28.907</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.16:56:28.907</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="30" parent="20" name="sp_creatediagram">
+      <ObjectId>741577680</ObjectId>
+      <SourceTextLength>1223</SourceTextLength>
+      <CreatedTimestamp>2019-06-26.16:56:28.893</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.16:56:28.893</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="31" parent="20" name="sp_dropdiagram">
+      <ObjectId>789577851</ObjectId>
+      <SourceTextLength>896</SourceTextLength>
+      <CreatedTimestamp>2019-06-26.16:56:28.910</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.16:56:28.910</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="32" parent="20" name="sp_helpdiagramdefinition">
+      <ObjectId>725577623</ObjectId>
+      <SourceTextLength>921</SourceTextLength>
+      <CreatedTimestamp>2019-06-26.16:56:28.887</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.16:56:28.887</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="33" parent="20" name="sp_helpdiagrams">
+      <ObjectId>709577566</ObjectId>
+      <SourceTextLength>658</SourceTextLength>
+      <CreatedTimestamp>2019-06-26.16:56:28.883</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.16:56:28.883</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="34" parent="20" name="sp_renamediagram">
+      <ObjectId>757577737</ObjectId>
+      <SourceTextLength>1721</SourceTextLength>
+      <CreatedTimestamp>2019-06-26.16:56:28.900</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.16:56:28.900</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="35" parent="20" name="sp_upgraddiagrams">
+      <ObjectId>645577338</ObjectId>
+      <SourceTextLength>1463</SourceTextLength>
+      <CreatedTimestamp>2019-06-26.16:56:28.540</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.16:56:28.540</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <column id="36" parent="23" name="dept_no">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="23" name="dept_name">
+      <Position>2</Position>
+      <DataType>varchar(40 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="38" parent="23" name="PK_departments">
+      <Position>1</Position>
+      <ColNames>dept_no</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="39" parent="23" name="PK_departments">
+      <ObjectId>981578535</ObjectId>
+      <CreatedTimestamp>2019-06-26.17:21:37.117</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.17:21:37.117</ModifiedTimestamp>
+      <ColNames>dept_no</ColNames>
+      <UnderlyingIndexName>PK_departments</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="24" name="emp_no">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="24" name="birth_date">
+      <Position>2</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="24" name="first_name">
+      <Position>3</Position>
+      <DataType>varchar(14 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="24" name="last_name">
+      <Position>4</Position>
+      <DataType>varchar(16 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="24" name="hire_date">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="24" name="dept_no">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="46" parent="24" name="PK__employee__129850FA6D0052D8">
+      <Position>1</Position>
+      <ColNames>emp_no</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="47" parent="24" name="PK__employee__129850FA6D0052D8">
+      <ObjectId>885578193</ObjectId>
+      <CreatedTimestamp>2019-06-26.17:21:22.747</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.17:21:22.747</ModifiedTimestamp>
+      <ColNames>emp_no</ColNames>
+      <UnderlyingIndexName>PK__employee__129850FA6D0052D8</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="48" parent="24" name="FK_employees_departments">
+      <ObjectId>1045578763</ObjectId>
+      <CreatedTimestamp>2019-06-26.17:32:45.553</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.17:32:45.553</ModifiedTimestamp>
+      <ColNames>dept_no</ColNames>
+      <RefTableId>965578478</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>departments</RefTableName>
+      <RefKeyName>PK_departments</RefKeyName>
+      <RefColNames>dept_no</RefColNames>
+    </foreign-key>
+    <column id="49" parent="25" name="emp_no">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="25" name="manager_no">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="51" parent="25" name="PK_employees_managers junction">
+      <Position>1</Position>
+      <ColNames>emp_no
+manager_no</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="52" parent="25" name="PK_employees_managers junction">
+      <ObjectId>917578307</ObjectId>
+      <CreatedTimestamp>2019-06-26.17:21:22.810</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.17:21:22.810</ModifiedTimestamp>
+      <ColNames>emp_no
+manager_no</ColNames>
+      <UnderlyingIndexName>PK_employees_managers junction</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="53" parent="25" name="FK_employees_managers junction_employees">
+      <ObjectId>949578421</ObjectId>
+      <CreatedTimestamp>2019-06-26.17:21:22.847</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.17:21:22.847</ModifiedTimestamp>
+      <ColNames>emp_no</ColNames>
+      <RefTableId>869578136</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>employees</RefTableName>
+      <RefKeyName>PK__employee__129850FA6D0052D8</RefKeyName>
+      <RefColNames>emp_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="54" parent="25" name="FK_employees_managers junction_managers">
+      <ObjectId>1029578706</ObjectId>
+      <CreatedTimestamp>2019-06-26.17:32:45.350</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.17:32:45.350</ModifiedTimestamp>
+      <ColNames>manager_no</ColNames>
+      <RefTableId>997578592</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>managers</RefTableName>
+      <RefKeyName>PK__managers__129850FAE285B49B</RefKeyName>
+      <RefColNames>manager_no</RefColNames>
+    </foreign-key>
+    <column id="55" parent="26" name="manager_no">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="26" name="birth_date">
+      <Position>2</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="26" name="first_name">
+      <Position>3</Position>
+      <DataType>varchar(14 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="26" name="last_name">
+      <Position>4</Position>
+      <DataType>varchar(16 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="26" name="hire_date">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="26" name="dept_no">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="61" parent="26" name="PK__managers__129850FAE285B49B">
+      <Position>1</Position>
+      <ColNames>manager_no</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="62" parent="26" name="PK__managers__129850FAE285B49B">
+      <ObjectId>1013578649</ObjectId>
+      <CreatedTimestamp>2019-06-26.17:32:45.270</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.17:32:45.270</ModifiedTimestamp>
+      <ColNames>manager_no</ColNames>
+      <UnderlyingIndexName>PK__managers__129850FAE285B49B</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="63" parent="26" name="FK_managers_departments">
+      <ObjectId>1061578820</ObjectId>
+      <CreatedTimestamp>2019-06-26.19:23:39.030</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.19:23:39.030</ModifiedTimestamp>
+      <ColNames>dept_no</ColNames>
+      <RefTableId>965578478</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>departments</RefTableName>
+      <RefKeyName>PK_departments</RefKeyName>
+      <RefColNames>dept_no</RefColNames>
+    </foreign-key>
+    <column id="64" parent="27" name="name">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="27" name="principal_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="66" parent="27" name="diagram_id">
+      <Position>3</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="67" parent="27" name="version">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="68" parent="27" name="definition">
+      <Position>5</Position>
+      <DataType>varbinary(max)|0s</DataType>
+    </column>
+    <index id="69" parent="27" name="PK__sysdiagr__C2B05B61E61E4AE1">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>diagram_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="70" parent="27" name="UK_principal_name">
+      <Position>2</Position>
+      <ColNames>principal_id
+name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="71" parent="27" name="PK__sysdiagr__C2B05B61E61E4AE1">
+      <ObjectId>677577452</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-06-26.16:56:28.880</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.16:56:28.880</ModifiedTimestamp>
+      <ColNames>diagram_id</ColNames>
+      <UnderlyingIndexName>PK__sysdiagr__C2B05B61E61E4AE1</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="72" parent="27" name="UK_principal_name">
+      <ObjectId>693577509</ObjectId>
+      <CreatedTimestamp>2019-06-26.16:56:28.880</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-26.16:56:28.880</ModifiedTimestamp>
+      <ColNames>principal_id
+name</ColNames>
+      <UnderlyingIndexName>UK_principal_name</UnderlyingIndexName>
+    </key>
+    <argument id="73" parent="28">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="74" parent="29" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="75" parent="29" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="76" parent="29" name="@version">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="77" parent="29" name="@definition">
+      <Position>4</Position>
+      <DataType>varbinary(max)|0s</DataType>
+    </argument>
+    <argument id="78" parent="30" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="79" parent="30" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="80" parent="30" name="@version">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="81" parent="30" name="@definition">
+      <Position>4</Position>
+      <DataType>varbinary(max)|0s</DataType>
+    </argument>
+    <argument id="82" parent="31" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="83" parent="31" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="84" parent="32" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="85" parent="32" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="86" parent="33" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="87" parent="33" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="88" parent="34" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="89" parent="34" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="90" parent="34" name="@new_diagramname">
+      <Position>3</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+  </database-model>
+</dataSource>
